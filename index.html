@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Growmedia тестовое задание"
+    >
+    <title>Grow test task</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="main">
+        <form action="#" class="form" id="form">
+            <fieldset class="form__fieldset">
+                <legend class="form__title">Личная информация</legend>
+                <label class="form__label _req">
+                    <span class="form__input-title">Имя</span>
+                    <input type="text" class="form__input" id="input_name">
+                </label>
+                <label class="form__label">
+                    <span class="form__input-title">Email</span>
+                    <input type="email" class="form__input _req" id="input_email">
+                </label>
+                <label class="form__label">
+                    <span class="form__input-title _req">Телефон</span>
+                    <input type="tel" class="form__input" id="input_tel">
+                </label>
+            </fieldset>
+            <fieldset class="form__fieldset">
+                <legend class="form__title">Информация о бизнесе</legend>
+                <label class="form__label">
+                    <span class="form__input-title" id="input_val">Ожидаемый оборот</span>
+                    <input type="number" class="form__input _req">
+                </label>
+                <label class="form__label">
+                    <span class="form__input-title">Выбор индустрии</span>
+                    <select name="industry" class="form__input" id="input_industry">
+                        <option value="industry1">Индустрия 1</option>
+                        <option value="industry2">Индустрия 2</option>
+                        <option value="industry3">Индустрия 3</option>
+                    </select>
+                </label>
+                <label class="form__label form__label_checkbox">
+                    <input type="checkbox" class="form__input-checkbox _req" id="input_checkbox">
+                    <span class="form__input-checkbox-title">Я принимаю правила сервиса</span>
+                </label>
+            </fieldset>
+            <footer class="form__footer">
+                <button type="submit" class="form__btn">Отправить</button>
+            </footer>
+        </form>
+    </main>
+</body>
+</html>
