@@ -9,6 +9,10 @@ body {
     background-color: gray;
 }
 
+body:has(dialog[open]) {
+    overflow: hidden;
+}
+
 .main {
     display: flex;
     justify-content: center;
@@ -91,6 +95,33 @@ body {
 .form__btn:hover {
     background-color: #fff;
     color: #5361f0;
+}
+
+._error .form__input-title, 
+._error .form__input-checkbox-title {
+    color: red;
+}
+
+._error input {
+    border: 1px solid red;
+}
+
+.dialog {
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #607D8B;
+}
+
+.dialog__btn {
+    margin-top: 12px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 100%;
+    border: 1px solid #5361f0;
+    background-color: #5361f0;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 480px) {

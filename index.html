@@ -12,28 +12,36 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <dialog class="dialog" id="modal">
+        <p class="dialog__text">
+            Спасибо! Ваша заявка принята
+        </p>
+        <button class="dialog__btn" id="dialog_btn">
+            OK
+        </button>
+    </dialog>
     <main class="main">
         <form action="#" class="form" id="form">
             <fieldset class="form__fieldset">
                 <legend class="form__title">Личная информация</legend>
-                <label class="form__label _req">
+                <label class="form__label">
                     <span class="form__input-title">Имя</span>
-                    <input type="text" class="form__input" id="input_name">
+                    <input type="text" class="form__input _req" id="input_name">
                 </label>
                 <label class="form__label">
-                    <span class="form__input-title">Email</span>
+                    <span class="form__input-title _email">Email</span>
                     <input type="email" class="form__input _req" id="input_email">
                 </label>
                 <label class="form__label">
-                    <span class="form__input-title _req">Телефон</span>
-                    <input type="tel" class="form__input" id="input_tel">
+                    <span class="form__input-title">Телефон</span>
+                    <input type="tel" name="phone" placeholder="+7(___)___-__-__" class="form__input _req" id="input_tel">
                 </label>
             </fieldset>
             <fieldset class="form__fieldset">
                 <legend class="form__title">Информация о бизнесе</legend>
                 <label class="form__label">
-                    <span class="form__input-title" id="input_val">Ожидаемый оборот</span>
-                    <input type="number" class="form__input _req">
+                    <span class="form__input-title">Ожидаемый оборот</span>
+                    <input type="number" class="form__input _req" id="input_val">
                 </label>
                 <label class="form__label">
                     <span class="form__input-title">Выбор индустрии</span>
@@ -43,7 +51,7 @@
                         <option value="industry3">Индустрия 3</option>
                     </select>
                 </label>
-                <label class="form__label form__label_checkbox">
+                <label class="form__label form__label_checkbox _req">
                     <input type="checkbox" class="form__input-checkbox _req" id="input_checkbox">
                     <span class="form__input-checkbox-title">Я принимаю правила сервиса</span>
                 </label>
