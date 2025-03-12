@@ -18,6 +18,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (error === 0) {
             dialogPopUp.showModal();
+
+            // json с формы в консоль
+            const formData = new FormData(this);
+            const jsonObject = {};
+
+            formData.forEach((value, key) => {
+                jsonObject[key] = value;
+            });
+
+            console.log(JSON.stringify(jsonObject, null, 2));
         } else {
             alert('Нужно заполнить все поля и согласиться с правилами сервиса');
         }
